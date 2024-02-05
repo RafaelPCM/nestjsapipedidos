@@ -1,10 +1,11 @@
 GET http://localhost:3000/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTcwNzE1ODgyMCwiZXhwIjoxNzA3MTYxODIwfQ.GATSKcbmIsqXwwmx3Kz6PV2tzVRktLqo6ps4dhGbrC4
 
 ###
 
 POST http://localhost:3000/products
 Content-Type:  application/json
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTcwNzE1ODgyMCwiZXhwIjoxNzA3MTYxODIwfQ.GATSKcbmIsqXwwmx3Kz6PV2tzVRktLqo6ps4dhGbrC4
 {
     "name": "iPhone",
     "description": "iPhone is a smartphone manufactured by Apple Inc. It was released in September 2016",
@@ -17,12 +18,19 @@ Content-Type:  application/json
 ###
 
 GET http://localhost:3000/orders
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTcwNzE1ODgyMCwiZXhwIjoxNzA3MTYxODIwfQ.GATSKcbmIsqXwwmx3Kz6PV2tzVRktLqo6ps4dhGbrC4
 
+###
+
+
+GET http://localhost:3000/orders/015fa47f-ac9a-4066-9ae7-8dc77b3b8c21
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTcwNzE1ODgyMCwiZXhwIjoxNzA3MTYxODIwfQ.GATSKcbmIsqXwwmx3Kz6PV2tzVRktLqo6ps4dhGbrC4
 
 ###
 
 POST http://localhost:3000/orders
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTcwNzE1ODgyMCwiZXhwIjoxNzA3MTYxODIwfQ.GATSKcbmIsqXwwmx3Kz6PV2tzVRktLqo6ps4dhGbrC4
 
 {
     "items": [
@@ -38,3 +46,23 @@ Content-Type: application/json
     "card_hash": 123
 }
 
+
+
+
+###
+
+
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTcwNzE1ODgyMCwiZXhwIjoxNzA3MTYxODIwfQ.GATSKcbmIsqXwwmx3Kz6PV2tzVRktLqo6ps4dhGbrC4
+
+{ 
+    "username": "john",
+    "password": "john"
+}
+
+
+// jwt.io
+// {
+#   "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTcwNzE1ODgyMCwiZXhwIjoxNzA3MTYxODIwfQ.GATSKcbmIsqXwwmx3Kz6PV2tzVRktLqo6ps4dhGbrC4"
+# }}
